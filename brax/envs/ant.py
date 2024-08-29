@@ -118,7 +118,7 @@ class Ant(PipelineEnv):
     that are too large. It is measured as *coefficient **x**
     sum(action<sup>2</sup>)* where *coefficient* is a parameter set for the
     control and has a default value of 0.5.
-  - *contact_cost*: A negative reward for penalising the ant if the external
+  - *contact_cost*: A negative reward git@github.com:google-deepmind/mujoco_menagerie.gitfor penalising the ant if the external
     contact force is too large. It is calculated *0.5 * 0.001 *
     sum(clip(external contact force to [-1,1])<sup>2</sup>)*.
 

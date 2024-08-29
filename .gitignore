@@ -9,6 +9,7 @@ __pycache__
 .vscode/
 .idea/
 *.egg-info
+*.html
 
 ####### UNITY STUFF
 

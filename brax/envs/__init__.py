@@ -30,6 +30,8 @@ from brax.envs import pusher
 from brax.envs import reacher
 from brax.envs import swimmer
 from brax.envs import walker2d
+from brax.envs import franka
+from brax.envs import walker2d_mpc
 from brax.envs.base import Env, PipelineEnv, State, Wrapper
 from brax.envs.wrappers import training
 
@@ -46,6 +48,8 @@ _envs = {
     'reacher': reacher.Reacher,
     'swimmer': swimmer.Swimmer,
     'walker2d': walker2d.Walker2d,
+    'franka': franka.Franka,
+    'walker2d_mpc': walker2d_mpc.Walker2DMPC,
 }
 
 

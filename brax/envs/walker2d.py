@@ -183,6 +183,15 @@ class Walker2d(PipelineEnv):
     qpos = self.sys.init_q + jax.random.uniform(
         rng1, (self.sys.q_size(),), minval=low, maxval=hi
     )
+    # print(qpos)
+    qpos = qpos.at[1].set(qpos[1] - 0.05)
+    qpos = qpos.at[3].set(jp.pi/12)
+    qpos = qpos.at[5].set(-jp.pi/12)
+
+    qpos = qpos.at[6].set(-jp.pi/12)
+    qpos = qpos.at[8].set(jp.pi/12)
+
+    # print(qpos)
     qvel = jax.random.uniform(
         rng2, (self.sys.qd_size(),), minval=low, maxval=hi
     )
